@@ -54,7 +54,7 @@ export default {
   modules: ['@nuxtjs/sitemap'],
 
   sitemap: {
-    hostname: 'http://sanjayboricha.github.io/',
+    hostname: 'https://sanjayboricha.github.io/',
     gzip: true,
     lastmod: '2021-02-14',
     sitemaps: [
