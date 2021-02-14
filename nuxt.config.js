@@ -51,7 +51,12 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ['@nuxtjs/sitemap'],
+
+  sitemap: {
+    hostname: 'http://sanjayboricha.github.io/',
+    gzip: true,
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
