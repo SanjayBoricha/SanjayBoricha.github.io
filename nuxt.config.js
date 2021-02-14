@@ -56,14 +56,6 @@ export default {
   sitemap: {
     hostname: 'https://sanjayboricha.github.io/',
     gzip: true,
-    lastmod: '2021-02-14',
-    sitemaps: [
-      {
-        path: '/sitemapindex.xml',
-        lastmod: '2021-02-14',
-        routes: ['/'],
-      },
-    ],
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
