@@ -28,12 +28,19 @@
           >
             <Instagram class="social-icon h-8 w-8" />
           </a>
-          <a
+          <!-- <a
             target="_blank"
             href="https://twitter.com/sboricha1619"
             class="inline-block h-16 w-16 flex items-center justify-center social-media-link mr-2 rounded-lg"
           >
             <Twitter class="social-icon h-8 w-8" />
+          </a> -->
+          <a
+            target="_blank"
+            href="https://github.com/SanjayBoricha"
+            class="inline-block h-16 w-16 flex items-center justify-center social-media-link mr-2 rounded-lg"
+          >
+            <Github class="social-icon h-8 w-8" />
           </a>
           <a
             href="mailto:sanjayboricha1001@gmail.com"
@@ -51,14 +58,16 @@
 <script>
 import LinkedIn from '~/components/LinkedIn'
 import Instagram from '~/components/Instagram'
-import Twitter from '~/components/Twitter'
+// import Twitter from '~/components/Twitter'
+import Github from '~/components/Github'
 import Mail from '~/components/Mail'
 
 export default {
   components: {
     LinkedIn,
     Instagram,
-    Twitter,
+    // Twitter,
+    Github,
     Mail,
   },
 }
