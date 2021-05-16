@@ -1,6 +1,6 @@
 <template>
-  <div class="h-screen bg-brown">
-    <div class="container h-full md:flex h-full px-6 md:px-16 lg:px-20">
+  <div class="h-screen bg-gray-900">
+    <div class="container h-full md:flex px-6 md:px-16 lg:px-20">
       <div class="w-full md:w-1/2 flex justify-center flex-col h-full">
         <h1
           class="leading-normal text-5xl md:text-6xl font-bold mb-6 text-white"
@@ -17,34 +17,34 @@
           <a
             target="_blank"
             href="https://www.linkedin.com/in/sanjay-boricha-528239180"
-            class="inline-block h-16 w-16 flex items-center justify-center social-media-link mr-2 rounded-lg"
+            class="flex h-16 w-16 items-center justify-center social-media-link mr-2 rounded-lg"
           >
             <LinkedIn class="social-icon h-8 w-8" />
           </a>
           <a
             target="_blank"
             href="https://www.instagram.com/sboricha1619"
-            class="inline-block h-16 w-16 flex items-center justify-center social-media-link mr-2 rounded-lg"
+            class="flex h-16 w-16 items-center justify-center social-media-link mr-2 rounded-lg"
           >
             <Instagram class="social-icon h-8 w-8" />
           </a>
           <!-- <a
             target="_blank"
             href="https://twitter.com/sboricha1619"
-            class="inline-block h-16 w-16 flex items-center justify-center social-media-link mr-2 rounded-lg"
+            class="flex h-16 w-16 items-center justify-center social-media-link mr-2 rounded-lg"
           >
             <Twitter class="social-icon h-8 w-8" />
           </a> -->
           <a
             target="_blank"
             href="https://github.com/SanjayBoricha"
-            class="inline-block h-16 w-16 flex items-center justify-center social-media-link mr-2 rounded-lg"
+            class="flex h-16 w-16 items-center justify-center social-media-link mr-2 rounded-lg"
           >
             <Github class="social-icon h-8 w-8" />
           </a>
           <a
             href="mailto:sanjayboricha1001@gmail.com"
-            class="inline-block h-16 w-16 flex items-center justify-center social-media-link mr-2 rounded-lg"
+            class="flex h-16 w-16 items-center justify-center social-media-link mr-2 rounded-lg"
           >
             <Mail class="social-icon h-8 w-8" />
           </a>
