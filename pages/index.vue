@@ -16,7 +16,7 @@
         <div class="flex rounded-lg mt-12 md:mt-16">
           <a
             target="_blank"
-            href="https://www.linkedin.com/in/sanjay-boricha-528239180"
+            href="https://www.linkedin.com/in/sanjay-boricha/"
             class="flex h-16 w-16 items-center justify-center social-media-link mr-2 rounded-lg"
           >
             <LinkedIn class="social-icon h-8 w-8" />
