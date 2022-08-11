@@ -1,7 +1,7 @@
 export default {
-  ssr: true,
+  ssr: false,
   // Target: https://go.nuxtjs.dev/config-target
-  target: 'static',
+  // target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -28,7 +28,7 @@ export default {
       {
         rel: 'stylesheet',
         href:
-          'https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap',
+          'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap',
       },
     ],
   },
@@ -37,7 +37,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [{ src: '~/plugins/aos', ssr: false }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,

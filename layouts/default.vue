@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="bg-blue-50">
+    <navbar />
     <Nuxt />
   </div>
 </template>
