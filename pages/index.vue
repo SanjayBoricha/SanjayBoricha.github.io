@@ -1,15 +1,38 @@
 <template>
   <div>
+    <div
+      ref="loader"
+      class="fixed h-full w-full z-50 bg-white flex items-center justify-center opacity-1 transition-opacity duration-1000"
+    >
+      <svg
+        class="animate-spin -ml-1 mr-3 h-10 w-10 text-blue-500"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+      >
+        <circle
+          class="opacity-25"
+          cx="12"
+          cy="12"
+          r="10"
+          stroke="currentColor"
+          stroke-width="4"
+        ></circle>
+        <path
+          class="opacity-75"
+          fill="currentColor"
+          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+        ></path>
+      </svg>
+    </div>
+
     <div class="h-screen bg-white" style="min-height: 700px">
       <div class="container md:flex px-6 lg:px-20 mx-auto h-full">
         <div
-          class="flex flex-col-reverse lg:flex-row justify-end -mx-5 lg:-mr-20 h-full items-center"
+          class="flex flex-col-reverse lg:flex-row justify-end -mx-5 lg:-mr-20 lx:-mr-5 h-full items-center"
         >
           <div class="px-5 lg:w-8/12 xl:w-7/12">
-            <div
-              class="w-full flex justify-center flex-col h-full"
-              data-aos="fade-up"
-            >
+            <div class="w-full flex justify-center flex-col h-full">
               <h1
                 class="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-7xl mb-6 font-light text-gray-600 hero-text leading-normal sm:leading-normal lg:leading-normal md:leading-normal"
               >
@@ -35,7 +58,7 @@
           <div
             class="px-5 md:w-8/12 lg:w-4/12 xl:w-5/12 flex justify-center items-center pt-20 lg:pt-0"
           >
-            <div data-aos="fade-left">
+            <div>
               <lottie-player
                 src="https://assets1.lottiefiles.com/packages/lf20_w51pcehl.json"
                 mode="bounce"
@@ -109,6 +132,13 @@ export default {
   },
   mounted() {
     AOS.init({ once: true })
+
+    setTimeout(() => {
+      this.$refs.loader.style.opacity = 0
+      setTimeout(() => {
+        this.$refs.loader.remove()
+      }, 1000)
+    }, 1000)
   },
 }
 </script>
