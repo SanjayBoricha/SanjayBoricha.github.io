@@ -8,8 +8,10 @@
       <div class="flex flex-wrap md:px-10 lg:px-20">
         <div class="w-full lg:w-1/2 mb-10">
           <div class="flex flex-wrap justify-center md:justify-start">
-            <div class="m-2">
-              <div class="bg-gray-50x h-24 w-24 p-4 rounded-full">
+            <div class="my-2 w-1/3 sm:w-1/4 flex flex-col items-center">
+              <div
+                class="bg-gray-50x h-16 w-16 p-3 sm:h-24 sm:w-24 sm:p-4 rounded-full"
+              >
                 <svg class="mt-2" viewBox="0 0 128 128">
                   <path
                     d="M0 8.934l49.854.158 14.167 24.47 14.432-24.47L128 8.935l-63.834 110.14zm126.98.637l-24.36.02-38.476 66.053L25.691 9.592.942 9.572l63.211 107.89zm-25.149-.008l-22.745.168-15.053 24.647L49.216 9.73l-22.794-.168 37.731 64.476zm-75.834-.17l23.002.009m-23.002-.01l23.002.01"
@@ -28,8 +30,10 @@
               <h3 class="text-center mt-2">Vue</h3>
             </div>
 
-            <div class="m-2">
-              <div class="bg-gray-50x h-24 w-24 p-4 rounded-full">
+            <div class="my-2 w-1/3 sm:w-1/4 flex flex-col items-center">
+              <div
+                class="bg-gray-50x h-16 w-16 p-3 sm:h-24 sm:w-24 sm:p-4 rounded-full"
+              >
                 <svg viewBox="0 0 128 128">
                   <g fill="#61DAFB">
                     <circle cx="64" cy="64" r="11.4"></circle>
@@ -42,8 +46,10 @@
               <h3 class="text-center mt-2">React</h3>
             </div>
 
-            <div class="m-2">
-              <div class="bg-gray-50x h-24 w-24 p-4 rounded-full">
+            <div class="my-2 w-1/3 sm:w-1/4 flex flex-col items-center">
+              <div
+                class="bg-gray-50x h-16 w-16 p-3 sm:h-24 sm:w-24 sm:p-4 rounded-full"
+              >
                 <svg class="mr-2 mt-1" viewBox="0 0 128 128">
                   <g fill="#3FB6D3">
                     <path
@@ -79,8 +85,10 @@
               <h3 class="text-center mt-2">Flutter</h3>
             </div>
 
-            <div class="m-2">
-              <div class="bg-gray-50x h-24 w-24 p-4 rounded-full">
+            <div class="my-2 w-1/3 sm:w-1/4 flex flex-col items-center">
+              <div
+                class="bg-gray-50x h-16 w-16 p-3 sm:h-24 sm:w-24 sm:p-4 rounded-full"
+              >
                 <svg
                   class="ml-1 mt-1"
                   viewBox="0 0 50 52"
@@ -96,8 +104,10 @@
               <h3 class="text-center mt-2">Laravel</h3>
             </div>
 
-            <div class="m-2">
-              <div class="bg-gray-50x h-24 w-24 p-4 rounded-full">
+            <div class="my-2 w-1/3 sm:w-1/4 flex flex-col items-center">
+              <div
+                class="bg-gray-50x h-16 w-16 p-3 sm:h-24 sm:w-24 sm:p-4 rounded-full"
+              >
                 <svg viewBox="0 0 128 128">
                   <path
                     fill="#83CD29"
@@ -108,8 +118,10 @@
               <h3 class="text-center mt-2">NodeJS</h3>
             </div>
 
-            <div class="m-2">
-              <div class="bg-gray-50x h-24 w-24 p-3 rounded-full">
+            <div class="my-2 w-1/3 sm:w-1/4 flex flex-col items-center">
+              <div
+                class="bg-gray-50x h-16 w-16 p-3 md:h-24 md:w-24 md:p-3 rounded-full"
+              >
                 <svg viewBox="0 0 128 128">
                   <path
                     fill-rule="evenodd"
@@ -122,8 +134,10 @@
               <h3 class="text-center mt-2">MongoDB</h3>
             </div>
 
-            <div class="m-2">
-              <div class="bg-gray-50x h-24 w-24 p-5 rounded-full">
+            <div class="my-2 w-1/3 sm:w-1/4 flex flex-col items-center">
+              <div
+                class="bg-gray-50x h-16 w-16 p-3 md:h-24 md:w-24 md:p-5 rounded-full"
+              >
                 <svg viewBox="0 0 128 128">
                   <svg viewBox="0 0 128 128">
                     <path
@@ -136,8 +150,10 @@
               <h3 class="text-center mt-2">MySQL</h3>
             </div>
 
-            <div class="m-2">
-              <div class="bg-gray-50x h-24 w-24 p-4 rounded-full">
+            <div class="my-2 w-1/3 sm:w-1/4 flex flex-col items-center">
+              <div
+                class="bg-gray-50x h-16 w-16 p-3 sm:h-24 sm:w-24 sm:p-4 rounded-full"
+              >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53 60">
                   <path
                     fill="#009639"
@@ -154,9 +170,9 @@
               <h3 class="text-center mt-2">Nginx</h3>
             </div>
 
-            <div class="m-2">
+            <div class="my-2 w-1/3 sm:w-1/4 flex flex-col items-center">
               <div
-                class="bg-gray-50x h-24 w-24 p-4 pt-6 pl-6 pr-2 rounded-full"
+                class="bg-gray-50x h-16 w-16 p-3 sm:h-24 sm:w-24 sm:p-4 pt-6 pl-6 pr-2 rounded-full"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -364,8 +380,10 @@
               <h3 class="text-center mt-2">Apache</h3>
             </div>
 
-            <div class="m-2">
-              <div class="bg-gray-50x h-24 w-24 p-3 rounded-full">
+            <div class="my-2 w-1/3 sm:w-1/4 flex flex-col items-center">
+              <div
+                class="bg-gray-50x h-16 w-16 p-3 md:h-24 md:w-24 md:p-3 rounded-full"
+              >
                 <svg viewBox="0 0 128 128">
                   <path
                     d="M124.8 52.1c-4.3-2.5-10-2.8-14.8-1.4-.6-5.2-4-9.7-8-12.9l-1.6-1.3-1.4 1.6c-2.7 3.1-3.5 8.3-3.1 12.3.3 2.9 1.2 5.9 3 8.3-1.4.8-2.9 1.9-4.3 2.4-2.8 1-5.9 2-8.9 2H79V49H66V24H51v12H26v13H13v14H1.8l-.2 1.5c-.5 6.4.3 12.6 3 18.5l1.1 2.2.1.2c7.9 13.4 21.7 19 36.8 19 29.2 0 53.3-13.1 64.3-40.6 7.4.4 15-1.8 18.6-8.9l.9-1.8-1.6-1zM28 39h10v11H28V39zm13.1 44.2c0 1.7-1.4 3.1-3.1 3.1-1.7 0-3.1-1.4-3.1-3.1 0-1.7 1.4-3.1 3.1-3.1 1.7.1 3.1 1.4 3.1 3.1zM28 52h10v11H28V52zm-13 0h11v11H15V52zm27.7 50.2c-15.8-.1-24.3-5.4-31.3-12.4 2.1.1 4.1.2 5.9.2 1.6 0 3.2 0 4.7-.1 3.9-.2 7.3-.7 10.1-1.5 2.3 5.3 6.5 10.2 14 13.8h-3.4zM51 63H40V52h11v11zm0-13H40V39h11v11zm13 13H53V52h11v11zm0-13H53V39h11v11zm0-13H53V26h11v11zm13 26H66V52h11v11zM38.8 81.2c-.2-.1-.5-.2-.8-.2-1.2 0-2.2 1-2.2 2.2 0 1.2 1 2.2 2.2 2.2s2.2-1 2.2-2.2c0-.3-.1-.6-.2-.8-.2.3-.4.5-.8.5-.5 0-.9-.4-.9-.9.1-.4.3-.7.5-.8z"
@@ -376,8 +394,10 @@
               <h3 class="text-center mt-2">Docker</h3>
             </div>
 
-            <div class="m-2">
-              <div class="bg-gray-50x h-24 w-24 p-4 rounded-full">
+            <div class="my-2 w-1/3 sm:w-1/4 flex flex-col items-center">
+              <div
+                class="bg-gray-50x h-16 w-16 p-3 sm:h-24 sm:w-24 sm:p-4 rounded-full"
+              >
                 <svg viewBox="0 0 128 128">
                   <path
                     d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64zm0 0"
@@ -388,8 +408,10 @@
               <h3 class="text-center mt-2">Tailwindcss</h3>
             </div>
 
-            <div class="m-2">
-              <div class="bg-gray-50x h-24 w-24 p-3.5 rounded-full">
+            <div class="my-2 w-1/3 sm:w-1/4 flex flex-col items-center">
+              <div
+                class="bg-gray-50x h-16 w-16 p-3 sm:h-24 sm:w-24 sm:p-3.5 rounded-full"
+              >
                 <svg viewBox="0 0 128 128">
                   <path
                     fill="#F34F29"
@@ -400,8 +422,10 @@
               <h3 class="text-center mt-2">Git</h3>
             </div>
 
-            <div class="m-2">
-              <div class="bg-gray-50x h-24 w-24 p-5 rounded-full">
+            <div class="my-2 w-1/3 sm:w-1/4 flex flex-col items-center">
+              <div
+                class="bg-gray-50x h-16 w-16 p-3 sm:h-24 sm:w-24 sm:p-5 rounded-full"
+              >
                 <svg viewBox="0 0 128 128">
                   <path fill="#fff" d="M22.67 47h99.67v73.67H22.67z"></path>
                   <path
@@ -417,23 +441,27 @@
         </div>
 
         <div class="w-full lg:w-1/2 pt-2">
-          <div class="flex w-full mb-6">
-            <div class="text-blue-600 mr-4 font-medium w-1/3">
+          <div class="flex flex-col-reverse md:flex-row w-full mb-6">
+            <div class="text-blue-600 mr-4 font-medium w-full md:w-1/3">
               Jan 2022 - Present
             </div>
-            <div class="w-2/3">
-              <p class="font-medium mb-1">Full Stack Developer</p>
-              <p class="text-sm text-gray-500">Impero IT Services Pvt. Ltd.</p>
+            <div class="w-full md:w-2/3">
+              <p class="font-medium mb-1 text-lg">Full Stack Developer</p>
+              <p class="text-sm md:text-base text-gray-500">
+                Impero IT Services Pvt. Ltd.
+              </p>
             </div>
           </div>
 
-          <div class="flex w-full mb-6">
-            <div class="text-blue-600 mr-4 font-medium w-1/3">
+          <div class="flex flex-col-reverse md:flex-row w-full mb-6">
+            <div class="text-blue-600 mr-4 font-medium w-full md:w-1/3">
               Dec 2019 - Nov 2021
             </div>
-            <div class="w-2/3">
-              <p class="font-medium mb-1">Full Stack Developer</p>
-              <p class="text-sm text-gray-500">Artixun Infotech LLP</p>
+            <div class="w-full md:w-2/3">
+              <p class="font-medium mb-1 text-lg">Full Stack Developer</p>
+              <p class="text-sm md:text-base text-gray-500">
+                Artixun Infotech LLP
+              </p>
             </div>
           </div>
         </div>

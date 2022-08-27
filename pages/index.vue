@@ -29,12 +29,12 @@
     <div class="h-screen bg-white" style="min-height: 700px">
       <div class="container md:flex px-6 lg:px-20 mx-auto h-full">
         <div
-          class="flex flex-col-reverse lg:flex-row justify-end -mx-5 lg:-mr-20 lx:-mr-5 h-full items-center"
+          class="flex flex-col-reverse lg:flex-row justify-end -mx-5 lg:-mr-20 lx:-mr-5 h-full lg:items-center"
         >
           <div class="px-5 lg:w-8/12 xl:w-7/12">
             <div class="w-full flex justify-center flex-col h-full">
               <h1
-                class="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-7xl mb-6 font-light text-gray-600 hero-text leading-normal sm:leading-normal lg:leading-normal md:leading-normal"
+                class="text-2xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-7xl mb-6 font-light text-gray-600 hero-text leading-normal sm:leading-normal lg:leading-normal md:leading-normal"
               >
                 Hello, I am <strong class="font-medium">Sanjay</strong>, <br />
                 a
@@ -46,7 +46,7 @@
               <div class="mt-4">
                 <a
                   href="#work"
-                  class="bg-blue-600 text-white rounded-md shadow-sm px-6 py-3"
+                  class="bg-blue-600 text-white rounded-md shadow-sm px-6 py-3 text-sm sm:text-base"
                 >
                   View My Work
                 </a>
@@ -56,7 +56,7 @@
           </div>
 
           <div
-            class="px-5 md:w-8/12 lg:w-4/12 xl:w-5/12 flex justify-center items-center pt-20 lg:pt-0"
+            class="px-5 md:w-8/12 lg:w-4/12 xl:w-5/12 flex justify-center items-center pt-28 sm:pt-20 lg:pt-0"
           >
             <div>
               <lottie-player
@@ -82,29 +82,29 @@
       <a
         target="_blank"
         href="https://www.linkedin.com/in/sanjay-boricha/"
-        class="flex h-16 w-16 items-center justify-center social-media-link mr-2 rounded-lg bg-white"
+        class="flex h-12 w-12 md:h-16 md:w-16 items-center justify-center social-media-link mr-2 rounded-lg bg-white"
       >
-        <LinkedIn class="social-icon h-8 w-8" />
+        <LinkedIn class="social-icon h-6 w-6 md:h-8 md:w-8" />
       </a>
       <a
         target="_blank"
         href="https://www.instagram.com/sanjayboricha.dev"
-        class="flex h-16 w-16 items-center justify-center social-media-link mr-2 rounded-lg bg-white"
+        class="flex h-12 w-12 md:h-16 md:w-16 items-center justify-center social-media-link mr-2 rounded-lg bg-white"
       >
-        <Instagram class="social-icon h-8 w-8" />
+        <Instagram class="social-icon h-6 w-6 md:h-8 md:w-8" />
       </a>
       <a
         target="_blank"
         href="https://github.com/SanjayBoricha"
-        class="flex h-16 w-16 items-center justify-center social-media-link mr-2 rounded-lg bg-white"
+        class="flex h-12 w-12 md:h-16 md:w-16 items-center justify-center social-media-link mr-2 rounded-lg bg-white"
       >
-        <Github class="social-icon h-8 w-8" />
+        <Github class="social-icon h-6 w-6 md:h-8 md:w-8" />
       </a>
       <a
         href="mailto:sanjayboricha1001@gmail.com"
-        class="flex h-16 w-16 items-center justify-center social-media-link mr-2 rounded-lg bg-white"
+        class="flex h-12 w-12 md:h-16 md:w-16 items-center justify-center social-media-link mr-2 rounded-lg bg-white"
       >
-        <Mail class="social-icon h-8 w-8" />
+        <Mail class="social-icon h-6 w-6 md:h-8 md:w-8" />
       </a>
     </footer>
   </div>
