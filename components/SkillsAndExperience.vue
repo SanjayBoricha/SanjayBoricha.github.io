@@ -466,7 +466,7 @@
           </div>
         </div>
 
-        <div class="w-full lg:w-1/2 pt-2">
+        <div class="w-full lg:w-1/2 pt-8 lg:pl-4">
           <div class="flex flex-col-reverse md:flex-row w-full mb-6">
             <div class="text-blue-600 mr-4 font-medium w-full md:w-1/3">
               Jan 2022 - Present
