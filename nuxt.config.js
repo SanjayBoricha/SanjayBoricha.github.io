@@ -16,7 +16,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Hi, my name is Sanjay Boricha and I am a Full Stack Developer.',
+          'Hello, my name is Sanjay Boricha, and I work as a Full Stack Developer.',
       },
     ],
     link: [
