@@ -4,12 +4,7 @@
       My Work
     </h2>
 
-    <div class="flex flex-wrap justify-center my-10 mx-10">
-      <!-- <tab-button :is-active="false" title="React" />
-      <tab-button :is-active="false" title="Vue" />
-      <tab-button :is-active="false" title="Flutter" />
-      <tab-button :is-active="false" title="Laravel" />
-      <tab-button :is-active="false" title="Node" /> -->
+    <!-- <div class="flex flex-wrap justify-center my-10 mx-10">
       <tab-button
         v-for="tech in technologies"
         :key="tech"
@@ -17,28 +12,28 @@
         :title="tech"
         @click.native="techChange(tech)"
       />
-    </div>
+    </div> -->
 
     <div
       class="container mx-auto md:flex justify-center md:px-10 lg:px-20 mb-10"
     >
-      <div class="w-full h-full flex flex-wrap items-center lg:-mx-4">
+      <div class="w-full h-full flex flex-wrap lg:-mx-4">
         <div
           v-for="(project, index) in projects"
           :key="index"
-          class="w-full md:w-1/2 lg:w-1/3 p-4"
+          class="w-full md:w-1/2 lg:w-1/3 p-4 h-full"
           data-aos="fade-up"
         >
           <div class="bg-white rounded-md p-4 shadow-sm">
-            <img
-              class="w-full object-cover rounded-md"
+            <!-- <img
+              class="w-full object-cover rounded-md mt-4"
               style="max-height: 300px; aspect-ratio: 16/10"
               :src="project.image"
               alt=""
-            />
+            /> -->
 
-            <div class="mt-4">
-              <h3 class="font-medium mb-2">{{ project.title }}</h3>
+            <div>
+              <h3 class="font-medium text-lg mb-2">{{ project.title }}</h3>
               <p class="text-sm">
                 {{ project.description }}
               </p>
@@ -60,11 +55,11 @@
 </template>
 
 <script>
-import TabButton from './home/TabButton.vue'
+// import TabButton from './home/TabButton.vue'
 
 export default {
   ssr: false,
-  components: { TabButton },
+  // components: { TabButton },
   data: () => {
     return {
       active: 'all',
@@ -72,60 +67,44 @@ export default {
       projects: [],
       allProjects: [
         {
-          title: 'Project 1',
+          title: 'TellULater',
           description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ab vero, debitis alias est enim ipsa explicabo nulla culpa eaque.',
+            'Create and share a digital time capsule with your friends.',
           image:
             'https://i.picsum.photos/id/912/500/500.jpg?hmac=usaNwSoto8KFh0Td59s9FhTxFpzqsoTfvGAK50ZzMBc',
-          technologies: ['node', 'react'],
+          technologies: ['node'],
         },
         {
-          title: 'Project 2',
+          title: 'Pigeon',
           description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ab vero, debitis alias est enim ipsa explicabo nulla culpa eaque.',
-          image:
-            'https://i.picsum.photos/id/912/500/500.jpg?hmac=usaNwSoto8KFh0Td59s9FhTxFpzqsoTfvGAK50ZzMBc',
-          technologies: ['laravel', 'vue'],
-        },
-        {
-          title: 'Project 3',
-          description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ab vero, debitis alias est enim ipsa explicabo nulla culpa eaque.',
-          image:
-            'https://i.picsum.photos/id/912/500/500.jpg?hmac=usaNwSoto8KFh0Td59s9FhTxFpzqsoTfvGAK50ZzMBc',
-          technologies: ['vue'],
-        },
-        {
-          title: 'Project 4',
-          description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ab vero, debitis alias est enim ipsa explicabo nulla culpa eaque.',
+            'Create organisations, groups, and invite people to join them, or join another organisations.',
           image:
             'https://i.picsum.photos/id/912/500/500.jpg?hmac=usaNwSoto8KFh0Td59s9FhTxFpzqsoTfvGAK50ZzMBc',
           technologies: ['laravel'],
         },
         {
-          title: 'Project 5',
+          title: 'Bydder',
           description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ab vero, debitis alias est enim ipsa explicabo nulla culpa eaque.',
+            'Send your offer after searching properties in South Australia.',
+          image:
+            'https://i.picsum.photos/id/912/500/500.jpg?hmac=usaNwSoto8KFh0Td59s9FhTxFpzqsoTfvGAK50ZzMBc',
+          technologies: ['laravel'],
+        },
+        {
+          title: 'Cagora',
+          description:
+            'Get the best offers from reputable dealers when you list and sell your car.',
+          image:
+            'https://i.picsum.photos/id/912/500/500.jpg?hmac=usaNwSoto8KFh0Td59s9FhTxFpzqsoTfvGAK50ZzMBc',
+          technologies: ['laravel', 'vue'],
+        },
+        {
+          title: 'Fire chat',
+          description:
+            'Make new friends by creating or finding open chat rooms.',
           image:
             'https://i.picsum.photos/id/912/500/500.jpg?hmac=usaNwSoto8KFh0Td59s9FhTxFpzqsoTfvGAK50ZzMBc',
           technologies: ['flutter'],
-        },
-        {
-          title: 'Project 6',
-          description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ab vero, debitis alias est enim ipsa explicabo nulla culpa eaque.',
-          image:
-            'https://i.picsum.photos/id/912/500/500.jpg?hmac=usaNwSoto8KFh0Td59s9FhTxFpzqsoTfvGAK50ZzMBc',
-          technologies: ['node'],
-        },
-        {
-          title: 'Project 7',
-          description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ab vero, debitis alias est enim ipsa explicabo nulla culpa eaque.',
-          image:
-            'https://i.picsum.photos/id/912/500/500.jpg?hmac=usaNwSoto8KFh0Td59s9FhTxFpzqsoTfvGAK50ZzMBc',
-          technologies: ['node'],
         },
       ],
     }

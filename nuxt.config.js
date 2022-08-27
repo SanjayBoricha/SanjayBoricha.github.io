@@ -31,6 +31,13 @@ export default {
           'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap',
       },
     ],
+    script: [
+      {
+        src:
+          'https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js',
+        defer: true,
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

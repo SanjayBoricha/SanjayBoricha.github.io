@@ -1,28 +1,52 @@
 <template>
   <div>
-    <div class="h-screen bg-white" style="min-height: 600px">
+    <div class="h-screen bg-white" style="min-height: 700px">
       <div class="container md:flex px-6 lg:px-20 mx-auto h-full">
-        <div class="w-full flex justify-center flex-col h-full">
-          <h1
-            class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6 font-light text-gray-600 hero-text leading-normal sm:leading-normal lg:leading-normal md:leading-normal"
-            data-aos="fade-up"
-          >
-            Hello, I am <strong class="font-medium">Sanjay</strong>, <br />
-            a
-            <strong class="text-gray-800 font-medium">
-              Full Stack Developer
-            </strong>
-          </h1>
-
-          <div class="mt-4">
-            <a
-              href="#work"
-              class="bg-blue-600 text-white rounded-md shadow-sm px-6 py-3"
+        <div
+          class="flex flex-col-reverse lg:flex-row justify-end -mx-5 lg:-mr-20 h-full items-center"
+        >
+          <div class="px-5 lg:w-8/12 xl:w-7/12">
+            <div
+              class="w-full flex justify-center flex-col h-full"
+              data-aos="fade-up"
             >
-              View My Work
-            </a>
+              <h1
+                class="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-7xl mb-6 font-light text-gray-600 hero-text leading-normal sm:leading-normal lg:leading-normal md:leading-normal"
+              >
+                Hello, I am <strong class="font-medium">Sanjay</strong>, <br />
+                a
+                <strong class="text-gray-800 font-medium">
+                  Full Stack Developer
+                </strong>
+              </h1>
+
+              <div class="mt-4">
+                <a
+                  href="#work"
+                  class="bg-blue-600 text-white rounded-md shadow-sm px-6 py-3"
+                >
+                  View My Work
+                </a>
+              </div>
+              <div class="flex rounded-lg mt-12 md:mt-16"></div>
+            </div>
           </div>
-          <div class="flex rounded-lg mt-12 md:mt-16"></div>
+
+          <div
+            class="px-5 md:w-8/12 lg:w-4/12 xl:w-5/12 flex justify-center items-center pt-20 lg:pt-0"
+          >
+            <div data-aos="fade-left">
+              <lottie-player
+                src="https://assets1.lottiefiles.com/packages/lf20_w51pcehl.json"
+                mode="bounce"
+                background="transparent"
+                speed="1"
+                style="width: 100%; height: auto"
+                loop
+                autoplay
+              ></lottie-player>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -84,7 +108,7 @@ export default {
     SkillsAndExperience,
   },
   mounted() {
-    AOS.init()
+    AOS.init({ once: true })
   },
 }
 </script>
@@ -92,6 +116,7 @@ export default {
 <style lang="css">
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -104,6 +129,7 @@ body {
   fill: rgba(37, 99, 235, 1);
 }
 .hero-text {
+  line-height: 1.4 !important;
   /* font-size: 72px; */
   /* background: -webkit-linear-gradient(45deg, #fc466b, #3f5efb); */
   background: -webkit-linear-gradient(45deg, #2b32b2, #1488cc);
