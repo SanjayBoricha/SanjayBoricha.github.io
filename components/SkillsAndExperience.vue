@@ -8,7 +8,9 @@
       <div class="flex flex-wrap md:px-10 lg:px-20">
         <div class="w-full lg:w-1/2 mb-10">
           <div class="flex flex-wrap justify-center md:justify-start">
-            <div class="my-2 w-1/3 sm:w-1/4 flex flex-col items-center">
+            <div
+              class="my-2 w-1/3 sm:w-1/4 xl:w-1/5 flex flex-col items-center"
+            >
               <div
                 class="bg-gray-50x h-16 w-16 p-3 sm:h-24 sm:w-24 sm:p-4 rounded-full"
               >
@@ -30,7 +32,9 @@
               <h3 class="text-center mt-2">Vue</h3>
             </div>
 
-            <div class="my-2 w-1/3 sm:w-1/4 flex flex-col items-center">
+            <div
+              class="my-2 w-1/3 sm:w-1/4 xl:w-1/5 flex flex-col items-center"
+            >
               <div
                 class="bg-gray-50x h-16 w-16 p-3 sm:h-24 sm:w-24 sm:p-4 rounded-full"
               >
@@ -46,7 +50,9 @@
               <h3 class="text-center mt-2">React</h3>
             </div>
 
-            <div class="my-2 w-1/3 sm:w-1/4 flex flex-col items-center">
+            <div
+              class="my-2 w-1/3 sm:w-1/4 xl:w-1/5 flex flex-col items-center"
+            >
               <div
                 class="bg-gray-50x h-16 w-16 p-3 sm:h-24 sm:w-24 sm:p-4 rounded-full"
               >
@@ -85,7 +91,9 @@
               <h3 class="text-center mt-2">Flutter</h3>
             </div>
 
-            <div class="my-2 w-1/3 sm:w-1/4 flex flex-col items-center">
+            <div
+              class="my-2 w-1/3 sm:w-1/4 xl:w-1/5 flex flex-col items-center"
+            >
               <div
                 class="bg-gray-50x h-16 w-16 p-3 sm:h-24 sm:w-24 sm:p-4 rounded-full"
               >
@@ -104,7 +112,9 @@
               <h3 class="text-center mt-2">Laravel</h3>
             </div>
 
-            <div class="my-2 w-1/3 sm:w-1/4 flex flex-col items-center">
+            <div
+              class="my-2 w-1/3 sm:w-1/4 xl:w-1/5 flex flex-col items-center"
+            >
               <div
                 class="bg-gray-50x h-16 w-16 p-3 sm:h-24 sm:w-24 sm:p-4 rounded-full"
               >
@@ -118,7 +128,9 @@
               <h3 class="text-center mt-2">NodeJS</h3>
             </div>
 
-            <div class="my-2 w-1/3 sm:w-1/4 flex flex-col items-center">
+            <div
+              class="my-2 w-1/3 sm:w-1/4 xl:w-1/5 flex flex-col items-center"
+            >
               <div
                 class="bg-gray-50x h-16 w-16 p-3 md:h-24 md:w-24 md:p-3 rounded-full"
               >
@@ -134,7 +146,9 @@
               <h3 class="text-center mt-2">MongoDB</h3>
             </div>
 
-            <div class="my-2 w-1/3 sm:w-1/4 flex flex-col items-center">
+            <div
+              class="my-2 w-1/3 sm:w-1/4 xl:w-1/5 flex flex-col items-center"
+            >
               <div
                 class="bg-gray-50x h-16 w-16 p-3 md:h-24 md:w-24 md:p-5 rounded-full"
               >
@@ -150,7 +164,9 @@
               <h3 class="text-center mt-2">MySQL</h3>
             </div>
 
-            <div class="my-2 w-1/3 sm:w-1/4 flex flex-col items-center">
+            <div
+              class="my-2 w-1/3 sm:w-1/4 xl:w-1/5 flex flex-col items-center"
+            >
               <div
                 class="bg-gray-50x h-16 w-16 p-3 sm:h-24 sm:w-24 sm:p-4 rounded-full"
               >
@@ -170,7 +186,9 @@
               <h3 class="text-center mt-2">Nginx</h3>
             </div>
 
-            <div class="my-2 w-1/3 sm:w-1/4 flex flex-col items-center">
+            <div
+              class="my-2 w-1/3 sm:w-1/4 xl:w-1/5 flex flex-col items-center"
+            >
               <div
                 class="bg-gray-50x h-16 w-16 p-3 sm:h-24 sm:w-24 sm:p-4 pt-6 pl-6 pr-2 rounded-full"
               >
@@ -380,7 +398,9 @@
               <h3 class="text-center mt-2">Apache</h3>
             </div>
 
-            <div class="my-2 w-1/3 sm:w-1/4 flex flex-col items-center">
+            <div
+              class="my-2 w-1/3 sm:w-1/4 xl:w-1/5 flex flex-col items-center"
+            >
               <div
                 class="bg-gray-50x h-16 w-16 p-3 md:h-24 md:w-24 md:p-3 rounded-full"
               >
@@ -394,7 +414,9 @@
               <h3 class="text-center mt-2">Docker</h3>
             </div>
 
-            <div class="my-2 w-1/3 sm:w-1/4 flex flex-col items-center">
+            <div
+              class="my-2 w-1/3 sm:w-1/4 xl:w-1/5 flex flex-col items-center"
+            >
               <div
                 class="bg-gray-50x h-16 w-16 p-3 sm:h-24 sm:w-24 sm:p-4 rounded-full"
               >
@@ -408,7 +430,9 @@
               <h3 class="text-center mt-2">Tailwindcss</h3>
             </div>
 
-            <div class="my-2 w-1/3 sm:w-1/4 flex flex-col items-center">
+            <div
+              class="my-2 w-1/3 sm:w-1/4 xl:w-1/5 flex flex-col items-center"
+            >
               <div
                 class="bg-gray-50x h-16 w-16 p-3 sm:h-24 sm:w-24 sm:p-3.5 rounded-full"
               >
@@ -422,7 +446,9 @@
               <h3 class="text-center mt-2">Git</h3>
             </div>
 
-            <div class="my-2 w-1/3 sm:w-1/4 flex flex-col items-center">
+            <div
+              class="my-2 w-1/3 sm:w-1/4 xl:w-1/5 flex flex-col items-center"
+            >
               <div
                 class="bg-gray-50x h-16 w-16 p-3 sm:h-24 sm:w-24 sm:p-5 rounded-full"
               >
