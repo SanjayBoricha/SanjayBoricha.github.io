@@ -31,11 +31,33 @@ export default {
           'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap',
       },
     ],
+
+    __dangerouslyDisableSanitizers: ['script'],
+
     script: [
       {
         src:
           'https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js',
         defer: true,
+      },
+      {
+        hid: 'gtm-script1',
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-Q8P4R9MERP',
+        async: true,
+        defer: true,
+      },
+      {
+        hid: 'gtm-script2',
+        innerHTML: `
+          window.dataLayer = window.dataLayer || []
+          function gtag() {
+            dataLayer.push(arguments)
+          }
+          gtag('js', new Date())
+          gtag('config', 'G-Q8P4R9MERP')
+        `,
+        type: 'text/javascript',
+        charset: 'utf-8',
       },
     ],
   },
