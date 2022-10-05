@@ -15,6 +15,7 @@
     "@nuxtjs/sitemap": "^2.4.0",
     "aos": "^2.3.4",
     "core-js": "^3.8.2",
+    "firebase": "^9.10.0",
     "nuxt": "^2.14.12"
   },
   "devDependencies": {

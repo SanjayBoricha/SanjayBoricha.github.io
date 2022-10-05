@@ -112,6 +112,8 @@
 
 <script>
 import AOS from 'aos'
+import { initializeApp } from 'firebase/app'
+import { getAnalytics } from 'firebase/analytics'
 import LinkedIn from '~/components/social-icons/LinkedIn'
 import Instagram from '~/components/social-icons/Instagram'
 // import Twitter from '~/components/social-icons/Twitter'
@@ -139,6 +141,21 @@ export default {
         this.$refs.loader.remove()
       }, 1000)
     }, 1000)
+
+    const firebaseConfig = {
+      apiKey: 'AIzaSyDWAL61wQPqTTOdYPjymuc6DK0M9wc5waI',
+      authDomain: 'portfolio-3807c.firebaseapp.com',
+      projectId: 'portfolio-3807c',
+      storageBucket: 'portfolio-3807c.appspot.com',
+      messagingSenderId: '751624149468',
+      appId: '1:751624149468:web:fc519734c030c0dd295719',
+      measurementId: 'G-Q8P4R9MERP',
+    }
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig)
+    // eslint-disable-next-line no-unused-vars
+    const analytics = getAnalytics(app)
   },
 }
 </script>
