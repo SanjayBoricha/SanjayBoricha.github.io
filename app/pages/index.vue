@@ -34,7 +34,9 @@ onMounted(() => {
 <template>
   <div class="flex flex-wrap xl:px-52 h-screen overflow-auto scrollbar">
     <div class="w-full md:w-2/5 p-4 md:h-screen pt-20 md:sticky top-0">
-      <h1 class="text-5xl font-bold mb-2 text-white mt-4">Sanjay Boricha</h1>
+      <h1 class="text-4xl md:text-5xl font-bold mb-2 text-white mt-4">
+        Sanjay Boricha
+      </h1>
       <h2 class="text-xl text-gray-300 mb-4">Full Stack Developer</h2>
 
       <p class="text-gray-400 mb-5">I build scalable web applications.</p>
