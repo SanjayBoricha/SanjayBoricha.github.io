@@ -1,141 +1,333 @@
+<script setup lang="ts">
+onMounted(() => {
+  // Activate link highlighting based on scroll position
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll("a[href^='#']");
+
+  const scrollableElement = document.querySelector(".scrollbar");
+
+  function onScroll() {
+    console.log("scrolling");
+    const scrollPos =
+      scrollableElement?.scrollTop || document.documentElement.scrollTop;
+
+    sections.forEach((section) => {
+      const offsetTop = section.offsetTop - 100;
+      const offsetBottom = offsetTop + section.offsetHeight;
+
+      if (scrollPos >= offsetTop && scrollPos < offsetBottom) {
+        const id = section.getAttribute("id");
+        navLinks.forEach((link) => {
+          link.classList.remove("text-white");
+          if (link.getAttribute("href") === `#${id}`) {
+            link.classList.add("text-white");
+          }
+        });
+      }
+    });
+  }
+
+  document.querySelector(".scrollbar")?.addEventListener("scroll", onScroll);
+});
+</script>
+
 <template>
-  <div class="">
-    <div class="flex flex-wrap xl:px-52 h-screen overflow-auto">
-      <div class="w-full md:w-2/5 p-4 md:h-screen pt-20 sticky top-0">
-        <h1 class="text-5xl font-bold mb-2 text-white">Sanjay Boricha</h1>
-        <h2 class="text-xl text-gray-300 mb-4">Full Stack Developer</h2>
+  <div class="flex flex-wrap xl:px-52 h-screen overflow-auto scrollbar">
+    <div class="w-full md:w-2/5 p-4 md:h-screen pt-20 md:sticky top-0">
+      <h1 class="text-5xl font-bold mb-2 text-white mt-4">Sanjay Boricha</h1>
+      <h2 class="text-xl text-gray-300 mb-4">Full Stack Developer</h2>
 
-        <p class="text-gray-400 mb-5 md:mb-10">
-          I build scalable web applications.
+      <p class="text-gray-400 mb-5">I build scalable web applications.</p>
+
+      <div class="flex gap-4 mb-10 items-center">
+        <a
+          class="block text-gray-400 hover:text-white"
+          href="https://github.com/SanjayBoricha"
+          target="_blank"
+          rel="noreferrer noopener"
+          aria-label="GitHub (opens in a new tab)"
+          title="GitHub"
+        >
+          <span class="sr-only" data-ninja-font="inter_regular_normal_sw50z">
+            GitHub
+          </span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            fill="currentColor"
+            class="h-6 w-6"
+            aria-hidden="true"
+          >
+            <path
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+            ></path>
+          </svg>
+        </a>
+
+        <a
+          class="block text-gray-400 hover:text-white"
+          href="https://www.linkedin.com/in/sanjay-boricha"
+          target="_blank"
+          rel="noreferrer noopener"
+          aria-label="LinkedIn (opens in a new tab)"
+          title="LinkedIn"
+        >
+          <span class="sr-only" data-ninja-font="inter_regular_normal_sw50z">
+            LinkedIn
+          </span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="h-6.5 w-6.5"
+            aria-hidden="true"
+          >
+            <path
+              d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+
+      <div class="p-0 text-sm hidden md:block">
+        <a href="#about" class="text-gray-500 text-white inline-block mb-3"
+          >ABOUT</a
+        >
+        <br />
+        <a href="#experience" class="text-gray-500 inline-block mb-3">
+          EXPERIENCE
+        </a>
+        <br />
+        <a href="#projects" class="text-gray-500 inline-block">PROJECTS</a>
+      </div>
+    </div>
+
+    <div class="w-full md:w-3/5 p-4 pb-20 text-gray-400">
+      <section id="about" class="md:pt-20">
+        <h2
+          class="text-white text-lg mb-2 sticky top-0 md:hidden bg-gray-800 py-4"
+        >
+          About
+        </h2>
+
+        <p class="mb-3">
+          I’m a full-stack developer who loves building web applications that
+          feel fast, reliable, and well-crafted. I enjoy working on both the
+          design and engineering sides, creating products that are not only
+          functional but also pleasant to use.
         </p>
+        <p class="mb-3">
+          I’ve spent the past few years developing scalable, cloud-native
+          applications using frameworks like Next.js, Laravel, AdonisJS, and
+          Nuxt.js. I like solving technical challenges, optimizing performance,
+          and making sure every part of a system works smoothly together.
+        </p>
+        <p class="mb-3">
+          Over time, I’ve worked on projects such as enterprise CMS platforms,
+          e-learning systems, and analytics dashboards, collaborating with teams
+          to turn ideas into polished, production-ready products.
+        </p>
+        <p class="mb-3">
+          When I’m not coding, I’m usually exploring new frameworks, watching
+          anime, or getting lost in games. I like anything that combines
+          creativity, problem-solving, and a good story.
+        </p>
+      </section>
 
-        <div class="p-0 text-sm">
-          <a href="#about" class="text-white inline-block mb-3">ABOUT</a>
-          <br />
-          <a href="#experience" class="text-white inline-block mb-3">
-            EXPERIENCE
-          </a>
-          <br />
-          <a href="#projects" class="text-white inline-block">PROJECTS</a>
+      <section id="experience" class="pt-20">
+        <h2
+          class="text-white text-lg mb-2 sticky top-0 md:hidden bg-gray-800 py-4"
+        >
+          Experience
+        </h2>
+
+        <div class="flex flex-wrap mb-10">
+          <div class="w-full md:w-52">
+            <span class="text-sm mb-1">JAN 2022 — JULY 2025</span>
+          </div>
+          <div class="flex-1">
+            <h3 class="font-medium text-gray-100 mb-2">
+              Full Stack Developer @ Impero IT Services
+            </h3>
+
+            <ul class="text-sm list-inside list-disc mb-3">
+              <li class="mb-1">
+                Led AWS infrastructure setup (EC2, S3, Redis, Load Balancer),
+                improving system uptime by 25% and reducing hosting costs by
+                15%.
+              </li>
+              <li class="mb-1">
+                Built and maintained scalable full-stack applications using
+                Next.js, Nuxt.js, Laravel, and AdonisJS, improving user
+                engagement and performance across projects.
+              </li>
+              <li class="mb-1">
+                Automated deployments using CI/CD pipelines with Docker and
+                Jenkins, cutting release times by 60% and ensuring smooth,
+                reliable releases.
+              </li>
+            </ul>
+
+            <div class="flex flex-wrap gap-2">
+              <span class="chip">Laravel</span>
+              <span class="chip">Node</span>
+              <span class="chip">Nest</span>
+              <span class="chip">AdonisJS</span>
+              <span class="chip">GraphQL</span>
+              <span class="chip">Nuxt</span>
+              <span class="chip">Vue</span>
+              <span class="chip">React</span>
+              <span class="chip">Next</span>
+              <span class="chip">AWS</span>
+            </div>
+          </div>
         </div>
-      </div>
 
-      <div class="w-full md:w-3/5 p-4 pb-20 text-gray-400">
-        <section id="about" class="pt-20">
-          <p class="mb-3">
-            I’m a full-stack developer who loves building web applications that
-            feel fast, reliable, and well-crafted. I enjoy working on both the
-            design and engineering sides, creating products that are not only
-            functional but also pleasant to use.
-          </p>
-          <p class="mb-3">
-            I’ve spent the past few years developing scalable, cloud-native
-            applications using frameworks like Next.js, Laravel, AdonisJS, and
-            Nuxt.js. I like solving technical challenges, optimizing
-            performance, and making sure every part of a system works smoothly
-            together.
-          </p>
-          <p class="mb-3">
-            Over time, I’ve worked on projects such as enterprise CMS platforms,
-            e-learning systems, and analytics dashboards, collaborating with
-            teams to turn ideas into polished, production-ready products.
-          </p>
-          <p class="mb-3">
-            When I’m not coding, I’m usually exploring new frameworks, watching
-            anime, or getting lost in games. I like anything that combines
-            creativity, problem-solving, and a good story.
-          </p>
-        </section>
+        <div class="flex flex-wrap">
+          <div class="w-full md:w-52">
+            <span class="text-sm mb-1">DEC 2019 — NOV 2021</span>
+          </div>
+          <div class="flex-1">
+            <h3 class="font-medium text-gray-100 mb-2">
+              Full Stack Developer @ Artixun Infotech
+            </h3>
 
-        <section id="experience" class="pt-20">
-          <div class="flex mb-10">
-            <div class="w-52">
-              <span class="text-sm">JAN 2022 — JULY 2025</span>
-            </div>
-            <div class="flex-1">
-              <h3 class="font-medium text-gray-100">
-                Full Stack Developer @ Impero IT Services
-              </h3>
+            <ul class="text-sm list-inside list-disc mb-3">
+              <li class="mb-1">
+                Built and deployed interactive UIs with React and Vue.js,
+                significantly improving load times and responsiveness
+              </li>
+              <li class="mb-1">
+                Developed scalable REST APIs with Laravel and Node.js to power
+                dynamic and data-driven features.
+              </li>
+              <li class="mb-1">
+                Managed deployment and monitoring across multiple cloud
+                platforms, ensuring smooth and reliable performance.
+              </li>
+            </ul>
 
-              <ul class="text-sm list-inside list-disc mb-3">
-                <li class="mb-1">
-                  Led AWS infrastructure setup (EC2, S3, Redis, Load Balancer),
-                  improving system uptime by 25% and reducing hosting costs by
-                  15%.
-                </li>
-                <li class="mb-1">
-                  Built and maintained scalable full-stack applications using
-                  Next.js, Nuxt.js, Laravel, and AdonisJS, improving user
-                  engagement and performance across projects.
-                </li>
-                <li class="mb-1">
-                  Automated deployments using CI/CD pipelines with Docker and
-                  Jenkins, cutting release times by 60% and ensuring smooth,
-                  reliable releases.
-                </li>
-              </ul>
-
-              <div class="flex flex-wrap gap-2">
-                <span class="chip">Laravel</span>
-                <span class="chip">Node</span>
-                <span class="chip">Nest</span>
-                <span class="chip">AdonisJS</span>
-                <span class="chip">GraphQL</span>
-                <span class="chip">Nuxt</span>
-                <span class="chip">Vue</span>
-                <span class="chip">React</span>
-                <span class="chip">Next</span>
-                <span class="chip">AWS</span>
-              </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="chip">React</span>
+              <span class="chip">Next</span>
+              <span class="chip">Vue</span>
+              <span class="chip">Nuxt</span>
+              <span class="chip">Laravel</span>
+              <span class="chip">AWS</span>
             </div>
           </div>
+        </div>
+        <!-- end exp -->
+      </section>
 
-          <div class="flex">
-            <div class="w-52">
-              <span class="text-sm">DEC 2019 — NOV 2021</span>
-            </div>
-            <div class="flex-1">
-              <h3 class="font-medium text-gray-100">
-                Full Stack Developer @ Artixun Infotech
-              </h3>
+      <section id="projects" class="pt-20">
+        <h2
+          class="text-white text-lg mb-2 sticky top-0 md:hidden bg-gray-800 py-4"
+        >
+          Projects
+        </h2>
 
-              <ul class="text-sm list-inside list-disc mb-3">
-                <li class="mb-1">
-                  Built and deployed interactive UIs with React and Vue.js,
-                  significantly improving load times and responsiveness
-                </li>
-                <li class="mb-1">
-                  Developed scalable REST APIs with Laravel and Node.js to power
-                  dynamic and data-driven features.
-                </li>
-                <li class="mb-1">
-                  Managed deployment and monitoring across multiple cloud
-                  platforms, ensuring smooth and reliable performance.
-                </li>
-              </ul>
+        <div class="mb-5">
+          <a
+            href="https://colata.com/"
+            target="_blank"
+            class="inline-flex items-center"
+          >
+            <h4 class="text-white">Colata</h4>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="text-white h-5"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </a>
+          <p class="text-sm">
+            Designed an athlete data management platform supporting real-time
+            analytics. Built data ingestion modules for external integrations
+            and a custom query builder with SQL-like functionality. Delivered
+            interactive dashboards (tables, charts) for 5K+ records, empowering
+            end-users with advanced insights.
+          </p>
+        </div>
 
-              <div class="flex flex-wrap gap-2">
-                <span class="chip">React</span>
-                <span class="chip">Next</span>
-                <span class="chip">Vue</span>
-                <span class="chip">Nuxt</span>
-                <span class="chip">Laravel</span>
-                <span class="chip">AWS</span>
-              </div>
-            </div>
-          </div>
-          <!-- end exp -->
-        </section>
+        <div class="mb-5">
+          <a
+            href="https://www.druidlearning.com/"
+            target="_blank"
+            class="inline-flex items-center"
+          >
+            <h4 class="text-white">Druid Learning CMS</h4>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="text-white h-5"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </a>
+          <p class="text-sm">
+            Built an enterprise CMS that automatically extracts text, images,
+            and tables from documents. Integrated NLP (TF-IDF, YAKE) for content
+            classification and tagging, and optimized background tasks with
+            BullMQ and Redis for better scalability.
+          </p>
+        </div>
 
-        <section id="projects" class="pt-20">
-          <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
-            reprehenderit ad rerum, ullam ducimus ipsam iste expedita.
-            Consequatur ea quod earum natus aliquam quo perferendis soluta!
-            Reprehenderit sapiente beatae aut.
-          </div>
-        </section>
-      </div>
+        <div>
+          <a
+            href="https://leavingcertplus.ie/"
+            target="_blank"
+            class="inline-flex items-center"
+          >
+            <h4 class="text-white">Leaving Cert Plus</h4>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="text-white h-5"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </a>
+          <p class="text-sm">
+            Developed and optimized an online learning platform that helps
+            students prepare for exams and take mock tests. Built features like
+            video lessons, past paper solutions, and interactive study materials
+            for web and mobile. Implemented backend APIs for content delivery
+            and subscriptions, and improved system performance to ensure smooth
+            user experience during peak usage.
+          </p>
+        </div>
+        <!-- end projects -->
+      </section>
     </div>
   </div>
 </template>
+
+<style scoped>
+.scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(100, 116, 139, 0.5);
+  border-radius: 4px;
+}
+</style>
