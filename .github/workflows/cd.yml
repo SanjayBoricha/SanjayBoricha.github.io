@@ -9,7 +9,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        bun: [1]
+        bun: [latest]
 
     steps:
       - name: Checkout
