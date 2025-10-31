@@ -1,0 +1,141 @@
+<template>
+  <div class="">
+    <div class="flex flex-wrap xl:px-52 h-screen overflow-auto">
+      <div class="w-full md:w-2/5 p-4 md:h-screen pt-20 sticky top-0">
+        <h1 class="text-5xl font-bold mb-2 text-white">Sanjay Boricha</h1>
+        <h2 class="text-xl text-gray-300 mb-4">Full Stack Developer</h2>
+
+        <p class="text-gray-400 mb-5 md:mb-10">
+          I build scalable web applications.
+        </p>
+
+        <div class="p-0 text-sm">
+          <a href="#about" class="text-white inline-block mb-3">ABOUT</a>
+          <br />
+          <a href="#experience" class="text-white inline-block mb-3">
+            EXPERIENCE
+          </a>
+          <br />
+          <a href="#projects" class="text-white inline-block">PROJECTS</a>
+        </div>
+      </div>
+
+      <div class="w-full md:w-3/5 p-4 pb-20 text-gray-400">
+        <section id="about" class="pt-20">
+          <p class="mb-3">
+            I’m a full-stack developer who loves building web applications that
+            feel fast, reliable, and well-crafted. I enjoy working on both the
+            design and engineering sides, creating products that are not only
+            functional but also pleasant to use.
+          </p>
+          <p class="mb-3">
+            I’ve spent the past few years developing scalable, cloud-native
+            applications using frameworks like Next.js, Laravel, AdonisJS, and
+            Nuxt.js. I like solving technical challenges, optimizing
+            performance, and making sure every part of a system works smoothly
+            together.
+          </p>
+          <p class="mb-3">
+            Over time, I’ve worked on projects such as enterprise CMS platforms,
+            e-learning systems, and analytics dashboards, collaborating with
+            teams to turn ideas into polished, production-ready products.
+          </p>
+          <p class="mb-3">
+            When I’m not coding, I’m usually exploring new frameworks, watching
+            anime, or getting lost in games. I like anything that combines
+            creativity, problem-solving, and a good story.
+          </p>
+        </section>
+
+        <section id="experience" class="pt-20">
+          <div class="flex mb-10">
+            <div class="w-52">
+              <span class="text-sm">JAN 2022 — JULY 2025</span>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-medium text-gray-100">
+                Full Stack Developer @ Impero IT Services
+              </h3>
+
+              <ul class="text-sm list-inside list-disc mb-3">
+                <li class="mb-1">
+                  Led AWS infrastructure setup (EC2, S3, Redis, Load Balancer),
+                  improving system uptime by 25% and reducing hosting costs by
+                  15%.
+                </li>
+                <li class="mb-1">
+                  Built and maintained scalable full-stack applications using
+                  Next.js, Nuxt.js, Laravel, and AdonisJS, improving user
+                  engagement and performance across projects.
+                </li>
+                <li class="mb-1">
+                  Automated deployments using CI/CD pipelines with Docker and
+                  Jenkins, cutting release times by 60% and ensuring smooth,
+                  reliable releases.
+                </li>
+              </ul>
+
+              <div class="flex flex-wrap gap-2">
+                <span class="chip">Laravel</span>
+                <span class="chip">Node</span>
+                <span class="chip">Nest</span>
+                <span class="chip">AdonisJS</span>
+                <span class="chip">GraphQL</span>
+                <span class="chip">Nuxt</span>
+                <span class="chip">Vue</span>
+                <span class="chip">React</span>
+                <span class="chip">Next</span>
+                <span class="chip">AWS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex">
+            <div class="w-52">
+              <span class="text-sm">DEC 2019 — NOV 2021</span>
+            </div>
+            <div class="flex-1">
+              <h3 class="font-medium text-gray-100">
+                Full Stack Developer @ Artixun Infotech
+              </h3>
+
+              <ul class="text-sm list-inside list-disc mb-3">
+                <li class="mb-1">
+                  Built and deployed interactive UIs with React and Vue.js,
+                  significantly improving load times and responsiveness
+                </li>
+                <li class="mb-1">
+                  Developed scalable REST APIs with Laravel and Node.js to power
+                  dynamic and data-driven features.
+                </li>
+                <li class="mb-1">
+                  Managed deployment and monitoring across multiple cloud
+                  platforms, ensuring smooth and reliable performance.
+                </li>
+              </ul>
+
+              <div class="flex flex-wrap gap-2">
+                <span class="chip">React</span>
+                <span class="chip">Next</span>
+                <span class="chip">Vue</span>
+                <span class="chip">Nuxt</span>
+                <span class="chip">Laravel</span>
+                <span class="chip">AWS</span>
+              </div>
+            </div>
+          </div>
+          <!-- end exp -->
+        </section>
+
+        <section id="projects" class="pt-20">
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+            reprehenderit ad rerum, ullam ducimus ipsam iste expedita.
+            Consequatur ea quod earum natus aliquam quo perferendis soluta!
+            Reprehenderit sapiente beatae aut.
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</template>
