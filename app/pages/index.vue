@@ -7,7 +7,6 @@ onMounted(() => {
   const scrollableElement = document.querySelector(".scrollbar");
 
   function onScroll() {
-    console.log("scrolling");
     const scrollPos =
       scrollableElement?.scrollTop || document.documentElement.scrollTop;
 
@@ -107,7 +106,7 @@ onMounted(() => {
     <div class="w-full md:w-3/5 p-4 pb-20 text-gray-400">
       <section id="about" class="md:pt-20">
         <h2
-          class="text-white text-lg mb-2 sticky top-0 md:hidden bg-gray-800 py-4"
+          class="text-white text-lg mb-2 sticky top-0 md:hidden bg-gray-900 py-4"
         >
           About
         </h2>
@@ -138,7 +137,7 @@ onMounted(() => {
 
       <section id="experience" class="pt-20">
         <h2
-          class="text-white text-lg mb-2 sticky top-0 md:hidden bg-gray-800 py-4"
+          class="text-white text-lg mb-2 sticky top-0 md:hidden bg-gray-900 py-4"
         >
           Experience
         </h2>
@@ -224,7 +223,7 @@ onMounted(() => {
 
       <section id="projects" class="pt-20">
         <h2
-          class="text-white text-lg mb-2 sticky top-0 md:hidden bg-gray-800 py-4"
+          class="text-white text-lg mb-2 sticky top-0 md:hidden bg-gray-900 py-4"
         >
           Projects
         </h2>

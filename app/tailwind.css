@@ -1,5 +1,5 @@
 @import "tailwindcss";
 
 .chip {
-  @apply inline-block py-1 px-3 text-blue-300 bg-blue-900 rounded-2xl text-sm;
+  @apply inline-block py-1 px-3 text-blue-400 bg-blue-950 rounded-2xl text-sm;
 }
